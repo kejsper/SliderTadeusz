@@ -1,12 +1,8 @@
 .whole-slider:hover .wrapper-text .slider-text .slides-text {
   background-color: #eee;
 }
-.whole-slider:hover .wrapper .slider .slides img {
+.whole-slider:hover .wrapper .slider .slides {
   transform: scale(1.1);
-}
-
-.whole-slider .wrapper .slider .slides img {
-  transition: all 0.5s ease-in-out;
 }
 
 
@@ -22,14 +18,22 @@
   width: 1280px;
   height: auto;
   padding: 0;
-  margin: 0;
+
 }
 
-.slider .slides {
+.slider .gowno .slides {
   float:left;
   width: 640px;
   height: 480px;
+  background-size: cover;
+  transition: all 0.5s;
+}
+
+.gowno {
+  width: 640px;
+  height: 480px;
   overflow: hidden;
+  float:left;
 }
 
 .wrapper-text {
@@ -44,7 +48,7 @@
   width: 1280px;
   height: auto;
   padding: 0;
-  margin: 0;
+
 }
 
 .slider-text .slides-text {
@@ -60,4 +64,65 @@
   position: relative;
   bottom: 50px;
   left: 40px;
+}
+
+.animation-text {
+  animation-name: animtxt;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: relative;
+
+}
+
+@keyframes animtxt {
+    20% {margin-left: -660px;}
+    45% {margin-left: -620px;}
+    100% {margin-left: -640px;}
+}
+
+.animation-img {
+  animation-name: animimg;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+@keyframes animimg {
+    25% {margin-left: -610px;}
+    100% {margin-left: -640px;}
+}
+
+
+.animation-text-rev {
+  animation-name: animtxtrev;
+  animation-duration: 2s;
+  animation-delay: 0.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+@keyframes animtxtrev {
+    0% {margin-left: -640px;}
+    25% {margin-left: -15px;}
+    100% {margin-left: 0px;}
+}
+
+.animation-img-rev {
+  animation-name: animimgrev;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  position: relative;
+}
+
+@keyframes animimgrev {
+    0% {margin-left: -640px;}
+    25% {margin-left: +20px;}
+    40% {margin-left: -20px;}
+    100% {margin-left: 0px;}
 }

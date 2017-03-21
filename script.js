@@ -12,16 +12,17 @@ $(document).ready(function () {
 
   function animateSlides () {
     if (whichWay === true) {
-      $sliderText.animate({'margin-left': '-=640'}, 400).promise().done(function(){
-        $slider.animate({'margin-left': '-=640'}, 600);
-      });
-
+      $slider.addClass('animation-img');
+      $slider.removeClass('animation-img-rev');
+      $sliderText.addClass('animation-text');
+      $sliderText.removeClass('animation-text-rev');
       whichWay = false;
     }
     else {
-      $slider.animate({'margin-left': '+=640'}, 400).promise().done(function() {
-        $sliderText.animate({'margin-left': '+=640'}, 600);
-      });
+      $slider.addClass('animation-img-rev');
+      $slider.removeClass('animation-img');
+      $sliderText.addClass('animation-text-rev');
+      $sliderText.removeClass('animation-text');
       whichWay = true;
     }
   }
