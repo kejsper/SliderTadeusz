@@ -1,0 +1,49 @@
+.wrapper {
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  float: left;
+}
+
+.wrapper .slider {
+  display: block;
+  width: 1280px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.slider .slides {
+  float:left;
+  width: 640px;
+  height: 480px;
+}
+
+.wrapper-text {
+  width: 640px;
+  height: 480px;
+  overflow: hidden;
+  float: left;
+}
+
+.wrapper-text .slider-text {
+  display: block;
+  width: 1280px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.slider-text .slides-text {
+  float:left;
+  width: 640px;
+  height: 480px;
+}
+
+.next {
+  display:block;
+  cursor: pointer;
+  position: relative;
+  bottom: 50px;
+  left: 40px;
+}
