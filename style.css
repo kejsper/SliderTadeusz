@@ -83,7 +83,7 @@
 
 .animation-img {
   animation-name: animimg;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-delay: 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
@@ -91,14 +91,14 @@
 }
 
 @keyframes animimg {
-    25% {margin-left: -610px;}
+    35% {margin-left: -610px;}
     100% {margin-left: -640px;}
 }
 
 
 .animation-text-rev {
   animation-name: animtxtrev;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-delay: 0.3s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
