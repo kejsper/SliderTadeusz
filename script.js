@@ -19,8 +19,8 @@ $(document).ready(function () {
       whichWay = false;
     }
     else {
-      $slider.animate({'margin-left': '+=640'}, 600).promise().done(function() {
-        $sliderText.animate({'margin-left': '+=640'}, 400);;
+      $slider.animate({'margin-left': '+=640'}, 400).promise().done(function() {
+        $sliderText.animate({'margin-left': '+=640'}, 600);
       });
       whichWay = true;
     }
@@ -31,6 +31,6 @@ $(document).ready(function () {
   }
 
   function startSlider() {
-    interval = setInterval(animateSlides, 4000);
+    interval = setInterval(animateSlides, 3000);
   }
 });

@@ -1,3 +1,15 @@
+.whole-slider:hover .wrapper-text .slider-text .slides-text {
+  background-color: #eee;
+}
+.whole-slider:hover .wrapper .slider .slides img {
+  transform: scale(1.1);
+}
+
+.whole-slider .wrapper .slider .slides img {
+  transition: all 0.5s ease-in-out;
+}
+
+
 .wrapper {
   width: 640px;
   height: 480px;
@@ -17,6 +29,7 @@
   float:left;
   width: 640px;
   height: 480px;
+  overflow: hidden;
 }
 
 .wrapper-text {
@@ -38,6 +51,7 @@
   float:left;
   width: 640px;
   height: 480px;
+  padding: 15px;
 }
 
 .next {
