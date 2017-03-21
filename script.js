@@ -23,13 +23,16 @@ $(document).ready(function () {
 
   function animateSlides () {
     if (whichWay === true) {
-      $slider.animate({'margin-left': '-=640'}, 1000);
-      $sliderText.animate({'margin-left': '+=640'}, 1000);
+      $slider.animate({'margin-left': '-=640'}, 600).promise().done(function(){
+        $sliderText.animate({'margin-left': '+=640'}, 400);
+      });
+
       whichWay = false;
     }
     else {
-      $slider.animate({'margin-left': '+=640'}, 1000);
-      $sliderText.animate({'margin-left': '-=640'}, 1000);
+      $slider.animate({'margin-left': '+=640'}, 600).promise().done(function() {
+        $sliderText.animate({'margin-left': '-=640'}, 400);;
+      });
       whichWay = true;
     }
   }
